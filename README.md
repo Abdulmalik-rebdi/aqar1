@@ -55,4 +55,18 @@ after cleaning this is the data i will be workimg on are 28 columns
 
 21 - advertiser_type = what type of dealler
 
-22 - review = the reviews for the advertiser 23 - profileImg = TRUE / false 24 - UserName = the user name 25 - iam_verified = TRUE / false 26 - path = inddcate the path from the home page to the post (it will be helpful becouse we can know if it is in the north-east - west -center ... of riyadh ) 27 - last_update :last_update time 28 -the price of the apartment
+22 - review = the reviews for the advertiser
+
+23 - profileImg = TRUE / false 
+
+24 - UserName = the user name 
+
+25 - iam_verified = TRUE / false 
+
+26 - path = inddcate the path from the home page to the post (it will be helpful becouse we can know if it is in the north-east - west -center ... of riyadh ) 
+
+27 - last_update :last_update time 28 -the price of the apartment
+
+28 - sold : in which day was the apartment sold 
+
+29 - soldAt : how long was the post availble in the site until it got sold 
