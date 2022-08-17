@@ -1,7 +1,7 @@
 # analyzing riyadh's rental apartments
 
 understanding the riyadh's rental apartments and creating a classification model that tell if the apartmant will be rented or not in specific time 
-in 6/8/2022 i started web scraping and after that i webScraped every day , i left join the new data with the main data (6/8/2022) and check which apartment got rented and i kept doing that for 10 days yet now from 6/8/2022 there are 2328 rented apartment from 6762 
+in 6/8/2022 i started web scraping and after that i webScraped every day , i left join the new data with the main data (6/8/2022) and check which apartment got rented and i kept doing that for 10 days yet now from 6/8/2022 there are 2328 rented apartment out of 6762 apartment
 ![image](https://user-images.githubusercontent.com/74616700/185017719-af131382-16ee-45dd-a499-d50b1b305ef8.png)
 
 
@@ -19,10 +19,7 @@ i create the dataSet until it got Ready for the EDA in 5 main steps
 | EDA | basic EDA |
 
 # Dataset
-after cleaning this is the data i will be workimg on are 28 columns
-
-
-
+after cleaning the data this is the data i will work with 
 
 
 | no | columnName | Description| 
@@ -55,3 +52,5 @@ after cleaning this is the data i will be workimg on are 28 columns
 | 29 | DayOFRent | at what day was it rented |
 | 30 | timeBeforRent | how long did it take to get rented |
 | 31 | onMarket | how long is the post posted (the time from the creation of the post till today ) |
+
+
