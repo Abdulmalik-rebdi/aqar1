@@ -1,9 +1,12 @@
+![image](https://user-images.githubusercontent.com/74616700/186343105-5ef0ebd2-cc01-4567-8352-d216981c8165.png)
+
 # analyzing riyadh's rental apartments
 
-understanding the riyadh's rental apartments and creating a classification model that tell if the apartmant will be rented or not in specific time 
-in 6/8/2022 i started web scraping and after that i webScraped every day , i left join the new data with the main data (6/8/2022) and check which apartment got rented and i kept doing that for 10 days yet now from 6/8/2022 there are 2328 rented apartment out of 6762 apartment
+understanding the riyadh's rental apartments and creating a classification model that tell if the apartmant will be rented or not if rented how long until rented .
+in 6/8/2022 i started web scraping and after that i webScraped every day , i left join the new data with the main data (6/8/2022) and check which apartment got off market and i kept doing that for 15 days 
 ![image](https://user-images.githubusercontent.com/74616700/185017719-af131382-16ee-45dd-a499-d50b1b305ef8.png)
 
+after i join the data i creates feature called OnMarket that tell how long the apartment stayed in the market then i made another feature that tell is the apartment rented or not i used that feature to create a classification model and the onMarket feature to make it the target in the regression model 
 
 you can use your own apartment to chaeck how long the apartment need to get rented in this [site](https://abdulmalik-rebdi-riyadh-rental-apartments-lrapp-n8sh72.streamlitapp.com/)
 
@@ -124,3 +127,6 @@ the data stucture is
     └── visualization <----- EDA
         └── EDA.ipynb
 ```
+after 15 days there are 3009 abd 3753 apartment not rented i plan to continue web scraping to get have less RMSA in OnMarket feature
+also insted of only focusing on the first day i could let more feature to increase the accuracy isRent 
+
