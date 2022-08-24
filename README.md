@@ -57,3 +57,67 @@ after cleaning the data this is the data i will work with
 | 31 | onMarket | how long is the post posted (the time from the creation of the post till today ) |
 | 32 | isRent | check if the apartment rented or not ) |
 
+
+the data stucture is
+
+├── LR
+│   └── app.py <----- bulding the site
+├── README.md
+├── data < ----- day of webscraping from 6th - 21st 
+│   ├── 10-8-2022
+│   ├── 11-8-2022
+│   ├── 12-8-2022
+│   ├── 13-8-2022
+│   ├── 14-8-2022
+│   ├── 15-8-2022
+│   ├── 16-8-2022,21:30.csv
+│   ├── 17-8-2022.csv
+│   ├── 18-8-2022.csv
+│   ├── 19-8-2022.csv
+│   ├── 2-8-2022
+│   ├── 21-8-2022.csv
+│   ├── 23-8-2022.csv
+│   ├── 3-8-2022.csv
+│   ├── 6-8-2022
+│   ├── 7-8-2022
+│   ├── 8-8-2022
+│   ├── 9-8-2022
+│   ├── AQAR_TEST.csv
+│   ├── ML.csv
+│   ├── ML_TEST.csv
+│   ├── ML_TEST2.csv
+│   ├── aqar.csv
+│   ├── from_30-7-2022_To_12-8-2022
+│   ├── the 29-7-2022.csv
+│   ├── try.csv
+│   ├── tryML.csv
+│   └── yest.csv
+├── model
+│   ├── classification.ipynb <----- clasification model
+│   └── regression.ipynb
+|
+└── src
+    ├── catboost_info <- for catboost package
+    │   ├── catboost_training.json
+    │   ├── learn
+    │   │   └── events.out.tfevents
+    │   ├── learn_error.tsv
+    │   ├── test
+    │   │   └── events.out.tfevents
+    │   ├── test1
+    │   │   └── events.out.tfevents
+    │   ├── test_error.tsv
+    │   ├── time_left.tsv
+    │   └── tmp
+    ├── class.pkl <----- pkl file to use in app.py for the site 
+    ├── cleaning.ipynb <----- cleaning to data set 
+    ├── featureEng.ipynb <----- prepare to model 
+    ├── features <----- creating features 
+    │   ├── onMarket.ipynb
+    │   └── timeBeforeRent.ipynb
+    ├── info.ipynb <----- info about dataset 
+    ├── join.ipynb <----- join data set togather 
+    ├── make_dataset.ipynb <----- webscraping
+    ├── reg.pkl <----- pkl file to use in app.py for the site  
+    └── visualization <----- EDA
+        └── EDA.ipynb
