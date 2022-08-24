@@ -7,8 +7,8 @@ L1 = list(df.district.unique())
 L2 = list(df.advertiser_type.unique())
 L3 = list(df.zone.unique())
 # Title
-st.header("Streamlit Machine Learning App")
-
+st.title("predicting  how long until  apartment get rented")
+st.header("please fill all information about your apartment below ")
 # Input bar 1
 user_id  = st.text_input('write your user id if you have one' , placeholder  = "1495817")
 # txt = st.text_area('Text to analyze')
