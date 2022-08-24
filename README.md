@@ -59,7 +59,7 @@ after cleaning the data this is the data i will work with
 
 
 the data stucture is
-
+```{bash}
 ├── LR
 │   └── app.py <----- bulding the site
 ├── README.md
@@ -121,3 +121,4 @@ the data stucture is
     ├── reg.pkl <----- pkl file to use in app.py for the site  
     └── visualization <----- EDA
         └── EDA.ipynb
+```
