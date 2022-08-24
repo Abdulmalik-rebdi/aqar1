@@ -15,7 +15,7 @@ user_id  = st.text_input('write your user id if you have one' , placeholder  = "
 # height = st.slider("Enter Height", 75, 95, 75)
 len_of_title  = st.text_input("write the title you want to pu in the site " , placeholder  = 'شقة للإيجار في شارع إبراهيم بن الأحمدي')
 len_of_content = st.text_area('enter the content that you want to put in the site ') 
-img_in_posd = st.slider('how many image you want to put  ', 1, 30, 8)
+img_in_post = st.slider('how many image you want to put  ', 1, 30, 8)
 price  = st.number_input("Enter price you want to  ")
 beds =  st.slider('how many bedrooms does your apartment have ', 1, 7, 1)
 livings = st.slider('how many living room does your apartment have ', 0, 5, 1)
@@ -76,21 +76,21 @@ if st.button("Submit"):
     len_of_title = len(len_of_title)
     len_of_content = len(len_of_content)
     # # Unpickle classifier
-    clf = joblib.load("./LR/clf.pkl")
+    clf = joblib.load("./src/class.pkl")
     
     # # Store inputs into dataframe
-    X = pd.DataFrame([[user_id, len_of_title, price ,len_of_content , img_in_posd ,  beds , livings , wc , area , street_width , age , ketchen1 ,ac1 ,furnished , district , advertiser_type , review , profileImg , iam_verified , zone ]], 
-                     columns = ['user_id', 'len_of_title', 'len_of_content' , 'img_in_posd' , 'price' , 'beds' , 'livings' , 'wc' , 'area' , 'street_width' , 'age' , 'ketchen' ,'ac' ,'furnished' , 'district' , 'advertiser_type' , 'review' , 'profileImg' , 'iam_verified' , 'zone'])
+    X = pd.DataFrame([[user_id, len_of_title, price ,len_of_content , img_in_post ,  beds , livings , wc , area , street_width , age , ketchen1 ,ac1 ,furnished , district , advertiser_type , review , profileImg , iam_verified , zone ]], 
+                     columns = ['user_id', 'len_of_title', 'len_of_content' , 'img_in_poss' , 'price' , 'beds' , 'livings' , 'wc' , 'area' , 'street_width' , 'age' , 'ketchen' ,'ac' ,'furnished' , 'district' , 'advertiser_type' , 'review' , 'profileImg' , 'iam_verified' , 'zone'])
     X = X.replace(["YES", "NO"], [1, 0])
   
     # # Get prediction
     prediction = clf.predict(X)[0]
     if prediction == True:
-        clf1 = joblib.load("./LR/reg.pkl")
+        clf1 = joblib.load("./src/reg.pkl")
         prediction = clf1.predict(X)[0]
         round(prediction)
     # Output prediction
     # for col in X:
         st.text(f"This apartment will be rented in {round(prediction)} days")
     else:
-        st.text(f"This apartment will not be rented in 75 days")
+        st.text(f"This apartment will not be rented ")
