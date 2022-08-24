@@ -11,12 +11,15 @@ in 6/8/2022 i started web scraping and after that i webScraped every day , i lef
 i create the dataSet until it got Ready for the EDA in 5 main steps 
 | fileName | Description |
 | --- | --- |
-| Webscraping.ipynb | in this file a gather the information from  [aqar site ](sa.aqar.fm) the information i gathered is all apartments in riyadh that are rented yearly . Everyday i ran this file to gather more inforamtion about the rental apartments  |
+| Webscraping | in this file a gather the information from  [aqar site ](sa.aqar.fm) the information i gathered is all apartments in riyadh that are rented yearly . Everyday i ran this file to gather more inforamtion about the rental apartments  |
 | cleaning.ipynb | after i scrpaed the data i needed to clean the data (i convert the date in create date in from second to date , and create columns from existing columns (user) to (review ,  profileImg ,UserName ,phone ,iam_verified ,rega_id  )that there are in user columns and then deleted columns (phone ,category , street_direction ,native ,rent_period ,city ,__typename ,phone , type, uri   )  ) |
-| join.ipnb | after that  combine the data into the data of today with the main data (left outter join)  |
+| join | after that  combine the data into the data of today with the main data (left outter join)  |
 | timeBeforeRent.ipynb | i create a new feature that how long was the apartment there when it got rented    |
 | onMarket | i create a new feature that  till how many days is the post of the ad existing  |
 | EDA | basic EDA |
+| featureEng | preprocecing the data for implementing the models |
+| classification | classification model |
+| regression | regression model |
 
 # Dataset
 after cleaning the data this is the data i will work with 
@@ -52,5 +55,5 @@ after cleaning the data this is the data i will work with
 | 29 | DayOFRent | at what day was it rented |
 | 30 | timeBeforRent | how long did it take to get rented |
 | 31 | onMarket | how long is the post posted (the time from the creation of the post till today ) |
-
+| 32 | isRent | check if the apartment rented or not ) |
 
